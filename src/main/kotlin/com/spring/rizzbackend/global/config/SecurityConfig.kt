@@ -12,7 +12,7 @@ class SecurityConfig {
     @Bean
     fun corsConfigurationSource(): CorsConfigurationSource {
         val corsConfiguration = CorsConfiguration()
-        corsConfiguration.addAllowedOriginPattern("*")
+        corsConfiguration.addAllowedOrigin("https://scrapyardbusan.github.io")
         corsConfiguration.addAllowedHeader("*")
         corsConfiguration.addAllowedMethod("*")
         corsConfiguration.allowCredentials = true
